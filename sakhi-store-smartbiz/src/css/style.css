@@ -39,9 +39,11 @@ body {
 }
 
 .logo-main {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 900;
     color: #000;
+    letter-spacing: -0.5px;
 }
 
 .logo-sub {
@@ -383,12 +385,14 @@ body {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .dark-section p {
     font-size: 1.2rem;
     opacity: 0.9;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .dark-grid {
@@ -396,6 +400,25 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 3rem;
+}
+
+.dark-grid > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-grid h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.dark-grid p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    opacity: 0.9;
 }
 
 .highlight-card {
@@ -408,6 +431,14 @@ body {
 .highlight-card h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.highlight-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    opacity: 0.9;
 }
 
 /* Marketing Tools */
@@ -596,6 +627,11 @@ body {
     .testimonial-container,
     .dark-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .dark-grid > div {
+        margin-bottom: 1.5rem;
     }
 
     .features-grid,
@@ -604,6 +640,10 @@ body {
     }
 
     .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .dark-section h2 {
         font-size: 2.5rem;
     }
 }
@@ -633,6 +673,20 @@ body {
     .dark-section h2,
     .cta-section h2 {
         font-size: 2rem;
+    }
+
+    .dark-grid {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .dark-grid h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .dark-section p {
+        margin-bottom: 1rem;
     }
 
     .hero-visual {
@@ -1225,6 +1279,14 @@ body {
 .feature-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-icon svg {
+    width: 48px;
+    height: 48px;
 }
 
 .theme-feature-card h3 {
@@ -1300,12 +1362,71 @@ body {
     }
 }
 
+/* FAQ Section */
+.faq-section {
+    background: #fff;
+    padding: 6rem 2rem;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #1a1a1a;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+}
+
 @media (max-width: 768px) {
     .themes-preview {
         grid-template-columns: 1fr;
     }
 
     .d2c-title {
+        font-size: 2rem;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-section h2 {
         font-size: 2rem;
     }
 }
