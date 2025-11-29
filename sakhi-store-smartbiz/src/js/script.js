@@ -52,6 +52,24 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
+    // Enhanced scroll animations for feature cards (optional - cards already animate on load)
+    // This ensures cards are visible when scrolled into view if they weren't initially
+    const featureCardObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all feature cards
+    document.querySelectorAll('.feature-card').forEach(card => {
+        featureCardObserver.observe(card);
+    });
+
     // Smooth scroll behavior enhancement
     let lastScrollTop = 0;
     let ticking = false;
@@ -134,5 +152,42 @@ document.querySelectorAll('.btn-cta, .btn-hero, .btn-primary').forEach(button =>
             button_text: this.textContent.trim(),
             button_location: this.closest('section')?.id || 'unknown'
         });
+    });
+});
+
+// Track feature card interactions
+document.querySelectorAll('.feature-card').forEach(card => {
+    card.addEventListener('click', function() {
+        const featureTitle = this.querySelector('h3')?.textContent.trim() || 'Unknown';
+        trackEvent('feature_card_click', {
+            feature_name: featureTitle,
+            section: 'features'
+        });
+        
+        // Optional: Add visual feedback on click
+        this.style.transform = 'translateY(-4px) scale(0.98)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 150);
+    });
+
+    // Track hover interactions (optional)
+    let hoverStartTime = null;
+    card.addEventListener('mouseenter', function() {
+        hoverStartTime = Date.now();
+    });
+
+    card.addEventListener('mouseleave', function() {
+        if (hoverStartTime) {
+            const hoverDuration = Date.now() - hoverStartTime;
+            if (hoverDuration > 1000) { // Track if hovered for more than 1 second
+                const featureTitle = this.querySelector('h3')?.textContent.trim() || 'Unknown';
+                trackEvent('feature_card_hover', {
+                    feature_name: featureTitle,
+                    hover_duration: hoverDuration
+                });
+            }
+            hoverStartTime = null;
+        }
     });
 });
