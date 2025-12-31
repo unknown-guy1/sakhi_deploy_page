@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     entry.target.classList.add('is-visible');
                 }, delay);
-                
+
                 // Keep observing for re-animation on scroll up (optional)
                 // observer.unobserve(entry.target);
             } else {
@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateScrollEffects() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         // Add scroll-based effects here if needed
         // For example: parallax, header opacity, etc.
-        
+
         lastScrollTop = scrollTop;
         ticking = false;
     }
@@ -98,13 +98,13 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
     } else {
         header.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -130,7 +130,7 @@ if ('IntersectionObserver' in window) {
 
 // Error handling for missing images
 document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('error', function() {
+    img.addEventListener('error', function () {
         this.style.display = 'none';
         console.warn('Image failed to load:', this.src);
     });
@@ -147,7 +147,7 @@ function trackEvent(eventName, eventData) {
 
 // Track CTA clicks
 document.querySelectorAll('.btn-cta, .btn-hero, .btn-primary').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         trackEvent('cta_click', {
             button_text: this.textContent.trim(),
             button_location: this.closest('section')?.id || 'unknown'
@@ -157,13 +157,13 @@ document.querySelectorAll('.btn-cta, .btn-hero, .btn-primary').forEach(button =>
 
 // Track feature card interactions
 document.querySelectorAll('.feature-card').forEach(card => {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function () {
         const featureTitle = this.querySelector('h3')?.textContent.trim() || 'Unknown';
         trackEvent('feature_card_click', {
             feature_name: featureTitle,
             section: 'features'
         });
-        
+
         // Optional: Add visual feedback on click
         this.style.transform = 'translateY(-4px) scale(0.98)';
         setTimeout(() => {
@@ -173,11 +173,11 @@ document.querySelectorAll('.feature-card').forEach(card => {
 
     // Track hover interactions (optional)
     let hoverStartTime = null;
-    card.addEventListener('mouseenter', function() {
+    card.addEventListener('mouseenter', function () {
         hoverStartTime = Date.now();
     });
 
-    card.addEventListener('mouseleave', function() {
+    card.addEventListener('mouseleave', function () {
         if (hoverStartTime) {
             const hoverDuration = Date.now() - hoverStartTime;
             if (hoverDuration > 1000) { // Track if hovered for more than 1 second
@@ -191,3 +191,57 @@ document.querySelectorAll('.feature-card').forEach(card => {
         }
     });
 });
+// Professional Download Handler
+document.querySelectorAll('.download-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+        // We don't preventDefault so the standard download still triggers
+        // but we add a nice visual feedback (toast/notification)
+        showDownloadFeedback();
+
+        trackEvent('apk_download_initiated', {
+            location: this.classList.contains('nav-link') ? 'navbar' :
+                this.classList.contains('btn-primary') ? 'header' : 'hero'
+        });
+    });
+});
+
+function showDownloadFeedback() {
+    // Create a toast notification if it doesn't exist
+    let toast = document.getElementById('download-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'download-toast';
+        toast.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e91e63;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            z-index: 10000;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            transition: all 0.3s ease;
+        `;
+        toast.innerHTML = '<span>🚀 Starting your download...</span>';
+        document.body.appendChild(toast);
+    }
+
+    // Show toast
+    setTimeout(() => {
+        toast.style.opacity = '1';
+        toast.style.bottom = '40px';
+    }, 100);
+
+    // Hide toast after 3 seconds
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.bottom = '30px';
+    }, 3000);
+}
