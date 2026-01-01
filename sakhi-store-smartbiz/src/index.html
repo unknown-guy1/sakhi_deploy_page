@@ -34,8 +34,8 @@
     <meta property="twitter:image" content="images/man-with-laptop.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.jpg">
+    <link rel="icon" type="image/png" href="images/favicon_new.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_new.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,14 +76,16 @@
             </div>
             <nav class="nav">
                 <a href="#why-smartbiz" class="nav-link" data-i18n="nav_why">Why SmartBiz?</a>
-                <a href="#features" class="nav-link dropdown" data-i18n="nav_features">Features</a>
+                <a href="#features" class="nav-link" data-i18n="nav_features">Features</a>
                 <a href="download.html" class="nav-link" data-i18n="nav_download">Download</a>
                 <a href="#sakhi-advantage" class="nav-link" data-i18n="nav_advantage">The Sakhi Advantage</a>
-                <a href="#" class="nav-link" data-i18n="nav_help">Help Center</a>
+                <a href="#help-center" class="nav-link" data-i18n="nav_help">Help Center</a>
             </nav>
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="mr">मराठी</button>
+            <div class="header-actions">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="mr">मराठी</button>
+                </div>
             </div>
 
         </div>
@@ -98,8 +100,8 @@
                     Store's website
                     builder provides all the tools you need to grow your business effortlessly.</p>
                 <div class="hero-actions">
-                    <a href="Assets/Sakhi.apk" class="btn-hero btn-download download-trigger"
-                        style="text-decoration: none;" download="Sakhi.apk">
+                    <a href="Assets/SmartBiz_Sakhi_Store.apk" class="btn-hero btn-download download-trigger"
+                        style="text-decoration: none;" download="SmartBiz_Sakhi_Store.apk">
                         <svg class="download-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="currentColor" stroke-width="2"
@@ -728,56 +730,133 @@
         </div>
     </section>
 
+    <!-- Help Center Section -->
+    <section id="help-center" class="help-center-section">
+        <div class="help-center-container">
+            <h2 data-i18n="hc_title">Help Center</h2>
+            <p class="hc-subtitle" data-i18n="hc_subtitle">We're here to help you succeed</p>
+
+            <div class="hc-cards">
+                <div class="hc-card">
+                    <div class="hc-icon-box">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
+                    <div class="hc-card-content">
+                        <h3 data-i18n="hc_email_title">Email</h3>
+                        <p>support@smartbiz.ltd<br>support@thynktech.ltd</p>
+                    </div>
+                </div>
+                <div class="hc-card">
+                    <div class="hc-icon-box">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                    </div>
+                    <div class="hc-card-content">
+                        <h3 data-i18n="hc_phone_title">Phone</h3>
+                        <p>+91 80696 40559<br>Mon-Sat: 9 AM - 6 PM IST</p>
+                    </div>
+                </div>
+                <div class="hc-card">
+                    <div class="hc-icon-box">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                    </div>
+                    <div class="hc-card-content">
+                        <h3 data-i18n="hc_address_title">Address</h3>
+                        <p>Office No. 1041, 10th Floor,<br>Gera's Imperium Rise, Hinjawadi Phase 2, Pune -
+                            411057<br>Maharashtra, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hc-follow">
+                <h3 data-i18n="hc_follow_title">Follow Us</h3>
+                <div class="hc-social-icons">
+                    <a href="https://www.facebook.com/people/Thynk-Technology-India/61577305545397/"
+                        class="hc-social-icon fb" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
+                            <path
+                                d="M14 13.5h2.5l1-4H14v-2c0-1.03.73-1.34 1.29-1.34.56 0 1.21 0 1.21 0V2.6s-1.08-.1-2.09-.1c-2.1 0-3.41 1.28-3.41 3.5V9.5H9v4h1.99V22h3.01v-8.5z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/thynk-technology-india" class="hc-social-icon in"
+                        target="_blank">
+                        <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
+                            <path
+                                d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.5 1.5 4s1-2.5 2.5-2.5 2.5 1 2.5 2.5-1 2.5-2.5 2.5zM22.5 21.5h-5v-7c0-1.5-0.5-2.5-2-2.5-1 0-1.5 0.5-2 1v8.5h-5v-13h5v2c0.5-1 2-1.5 3.5-1.5 3.5 0 5.5 2.5 5.5 6v7z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/thynktechnology.india/" class="hc-social-icon ig"
+                        target="_blank">
+                        <svg viewBox="0 0 24 24" fill="white" width="24" height="24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grid">
+                <div class="footer-column brand-col">
+                    <div class="footer-brand-top">
+                        <div class="footer-bag-icon-small">
+                            <svg viewBox="0 0 24 24" fill="white" width="20" height="20">
+                                <path
+                                    d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z" />
+                            </svg>
+                        </div>
+                        <div class="brand-text-footer">
+                            <span class="brand-name-footer">SmartBiz</span>
+                            <span class="brand-tagline-footer">by Sakhi Store</span>
+                        </div>
+                    </div>
+                    <p class="footer-description" data-i18n="f_desc">SmartBiz is an all-in-one D2C commerce platform
+                        that helps you build, launch, and scale your online business with ease. Powered by Sakhi Store.
+                    </p>
+                </div>
+
                 <div class="footer-column">
                     <h4 data-i18n="f_col1_title">WEBSITE BUILDER</h4>
-                    <a href="#" data-i18n="f_col1_link1">by Sakhi Store</a>
                     <a href="#" data-i18n="f_col1_link2">Features</a>
                     <a href="download.html" data-i18n="f_col1_link3">Download app</a>
                     <a href="#" data-i18n="f_col1_link4">Tutorials</a>
-                    <a href="#" data-i18n="f_col1_link5">Beginner's guide</a>
                     <a href="#" data-i18n="f_col1_link6">Book a demo</a>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="f_col2_title">ORDER MANAGEMENT</h4>
+                    <h4 data-i18n="f_col2_title">OPERATIONS</h4>
                     <a href="#" data-i18n="f_col2_link1">Smart Hub</a>
-                    <a href="#" data-i18n="f_col2_link2">Book a demo</a>
-                </div>
-                <div class="footer-column">
-                    <h4 data-i18n="f_col3_title">FULFILLMENT</h4>
                     <a href="#" data-i18n="f_col3_link1">Multi-Channel Fulfillment</a>
                     <a href="#" data-i18n="f_col3_link2">Features</a>
-                    <a href="#" data-i18n="f_col3_link3">Book a demo</a>
-                    <a href="#" data-i18n="f_col3_link4">Tutorials</a>
                 </div>
+
                 <div class="footer-column">
                     <h4 data-i18n="f_col4_title">RESOURCES</h4>
                     <a href="#" data-i18n="f_col4_link1">Blog</a>
-                    <a href="#" data-i18n="f_col4_link2">Success Stories</a>
                     <a href="#" data-i18n="f_col4_link3">Smart Academy</a>
-                </div>
-                <div class="footer-column">
-                    <h4 data-i18n="f_col5_title">COMPANY</h4>
-                    <a href="#" data-i18n="f_col5_link1">FAQs</a>
+                    <a href="#help-center" data-i18n="f_col5_link1">Help Center</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="social-icons">
-                    <a href="#" class="social-icon">📷</a>
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">▶</a>
-                </div>
-                <div class="footer-logo">
-                    <div style="font-weight: 700; font-size: 1.2rem;">SmartBiz</div>
-                    <div style="font-size: 0.9rem; color: #999; margin-top: 4px;">by Sakhi Store</div>
-                </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom-minimal">
                 <div class="footer-copyright">
                     © 2025 Sakhi Store. All rights reserved
                 </div>
-                <div class="footer-links">
+                <div class="footer-bottom-links">
                     <a href="#">Privacy policy</a>
                     <a href="#">Terms of use</a>
                     <a href="#">Sitemap</a>

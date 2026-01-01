@@ -23,6 +23,7 @@ const translations = {
         nav_download: "Download",
         nav_advantage: "The Sakhi Advantage",
         nav_help: "Help Center",
+        nav_try_free: "Try for free &rarr;",
         hero_title: "Build, Launch & Grow Your D2C Business",
         hero_desc: "Create a stunning e-commerce website, powered by Sakhi Store. SmartBiz by Sakhi Store's website builder provides all the tools you need to grow your business effortlessly.",
         order_summary: "Order Summary",
@@ -103,6 +104,7 @@ const translations = {
         cta_badge: "0% fees until December 2025",
         cta_desc: "Start building your online store today. No credit card required.",
         cta_btn: "Sign-up for free",
+        f_desc: "SmartBiz is an all-in-one D2C commerce platform that helps you build, launch, and scale your online business with ease. Powered by Sakhi Store.",
         f_col1_title: "WEBSITE BUILDER",
         f_col1_link1: "by Sakhi Store",
         f_col1_link2: "Features",
@@ -123,7 +125,7 @@ const translations = {
         f_col4_link2: "Success Stories",
         f_col4_link3: "Smart Academy",
         f_col5_title: "COMPANY",
-        f_col5_link1: "FAQs",
+        f_col5_link1: "Help Center",
         review1_cat: "FMCG / Wellness Brand",
         review1_title: "\"SmartBiz understands the speed at which FMCG brands move.\"",
         review1_quote: "\"Launching new SKUs was painful earlier, but SmartBiz made it seamless. Their analytics dashboard shows exactly what's selling, where we're losing margin, and where demand is rising. It has changed how we make decisions.\"",
@@ -161,7 +163,13 @@ const translations = {
         review4_title: "\"SmartBiz transformed how we manage our growing product portfolio.\"",
         review4_quote: "\"As we expanded from 10 to 100+ SKUs, managing inventory and orders became overwhelming. SmartBiz's intuitive dashboard and automated workflows have been a game-changer. We can now focus on product innovation and customer experience instead of operational headaches.\"",
         review4_author: "Priya Verma",
-        review4_role: "Founder & CEO, GlowEssence"
+        review4_role: "Founder & CEO, GlowEssence",
+        hc_title: "Help Center",
+        hc_subtitle: "We're here to help you succeed",
+        hc_email_title: "Email",
+        hc_phone_title: "Phone",
+        hc_address_title: "Address",
+        hc_follow_title: "Follow Us"
     },
     mr: {
         nav_why: "SmartBiz का?",
@@ -169,6 +177,7 @@ const translations = {
         nav_download: "डाउनलोड करा",
         nav_advantage: "सखी फायदा",
         nav_help: "मदत केंद्र",
+        nav_try_free: "मोफत वापरून पहा &rarr;",
         hero_title: "तुमचा D2C व्यवसाय तयार करा, लाँच करा आणि वाढवा",
         hero_desc: "सखी स्टोअरद्वारे समर्थित एक आकर्षक ई-कॉमर्स वेबसाइट तयार करा. SmartBiz कडून वेबसाइट बिल्डर तुम्हाला तुमचा व्यवसाय विनासायास वाढवण्यासाठी सर्व साधने प्रदान करतो.",
         order_summary: "ऑर्डर सारांश",
@@ -249,6 +258,7 @@ const translations = {
         cta_badge: "डिसेंबर २०२५ पर्यंत ०% फी",
         cta_desc: "आजच तुमचे ऑनलाइन स्टोअर तयार करण्यास सुरुवात करा. क्रेडिट कार्डची आवश्यकता नाही.",
         cta_btn: "मोफत नोंदणी करा (Sign-up)",
+        f_desc: "SmartBiz हे सर्व-इन-वन D2C कॉमर्स प्लॅटफॉर्म आहे जे तुम्हाला तुमचा ऑनलाइन व्यवसाय सहजतेने तयार करण्यास, लाँच करण्यास आणि स्केल करण्यास मदत करते. सखी स्टोअरद्वारे समर्थित.",
         f_col1_title: "वेबसाइट बिल्डर",
         f_col1_link1: "सखी स्टोअरद्वारे",
         f_col1_link2: "वैशिष्ट्ये",
@@ -269,7 +279,7 @@ const translations = {
         f_col4_link2: "यशाच्या कथा",
         f_col4_link3: "स्मार्ट अकादमी",
         f_col5_title: "कंपनी",
-        f_col5_link1: "FAQs",
+        f_col5_link1: "मदत केंद्र",
         review1_cat: "FMCG / वेलनेस ब्रँड",
         dl_badge: "नवीन आवृत्ती उपलब्ध",
         dl_title: "आत्ता डाउनलोड करा",
@@ -307,7 +317,13 @@ const translations = {
         review4_title: "\"SmartBiz ने आम्ही आमचा वाढता उत्पादन पोर्टफोलिओ कसा व्यवस्थापित करतो हे बदलून टाकले आहे.\"",
         review4_quote: "\"आम्ही १० वरून १००+ SKU पर्यंत विस्तार केला म्हणून, इन्व्हेंटरी आणि ऑर्डर्स व्यवस्थापित करणे थकवणारे झाले. SmartBiz चे अंतर्ज्ञानी डॅशबोर्ड आणि स्वयंचलित वर्कफ्लो गेम-चेंजर ठरले आहेत. आता आम्ही ऑपरेशनल डोकेदुखीऐवजी उत्पादन नाविन्य आणि ग्राहक अनुभवावर लक्ष केंद्रित करू शकतो.\"",
         review4_author: "प्रिया वर्मा",
-        review4_role: "संस्थापक आणि CEO, GlowEssence"
+        review4_role: "संस्थापक आणि CEO, GlowEssence",
+        hc_title: "मदत केंद्र",
+        hc_subtitle: "आम्ही तुम्हाला यशस्वी होण्यासाठी मदत करायला येथे आहोत",
+        hc_email_title: "ईमेल",
+        hc_phone_title: "फोन",
+        hc_address_title: "पत्ता",
+        hc_follow_title: "आम्हाला फॉलो करा"
     }
 };
 

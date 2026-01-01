@@ -13,8 +13,8 @@
         content="Download the Sakhi APK and start managing your business more efficiently with the Retail Billing System.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.jpg">
+    <link rel="icon" type="image/png" href="images/favicon_new.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_new.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,14 +38,16 @@
             </div>
             <nav class="nav">
                 <a href="index.html#why-smartbiz" class="nav-link" data-i18n="nav_why">Why SmartBiz?</a>
-                <a href="index.html#features" class="nav-link dropdown" data-i18n="nav_features">Features</a>
+                <a href="index.html#features" class="nav-link" data-i18n="nav_features">Features</a>
                 <a href="download.html" class="nav-link active" data-i18n="nav_download">Download</a>
                 <a href="index.html#sakhi-advantage" class="nav-link" data-i18n="nav_advantage">The Sakhi Advantage</a>
-                <a href="#" class="nav-link" data-i18n="nav_help">Help Center</a>
+                <a href="index.html#help-center" class="nav-link" data-i18n="nav_help">Help Center</a>
             </nav>
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="mr">मराठी</button>
+            <div class="header-actions">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="mr">मराठी</button>
+                </div>
             </div>
 
         </div>
@@ -82,7 +84,8 @@
             </div>
 
             <div class="download-action animate-pulse">
-                <a href="Assets/Sakhi.apk" class="btn-download-main download-trigger" download="Sakhi.apk">
+                <a href="Assets/SmartBiz_Sakhi_Store.apk" class="btn-download-main download-trigger"
+                    download="SmartBiz_Sakhi_Store.apk">
                     <span class="btn-text" data-i18n="dl_btn_main">Download APK (v1.0.1)</span>
                     <span class="btn-glow"></span>
                 </a>
@@ -91,7 +94,8 @@
             <div class="instruction-box">
                 <h3 data-i18n="dl_inst_title">Installation Instructions:</h3>
                 <ol class="instruction-list">
-                    <li data-i18n="dl_inst_1">Download the <strong>Sakhi.apk</strong> file from the button above.</li>
+                    <li data-i18n="dl_inst_1">Download the <strong>SmartBiz_Sakhi_Store.apk</strong> file from the
+                        button above.</li>
                     <li data-i18n="dl_inst_2">Locate the file in your device's <strong>Downloads</strong> folder.</li>
                     <li data-i18n="dl_inst_3">Tap on the file and click <strong>"Install"</strong>.</li>
                     <li data-i18n="dl_inst_4">If prompted, enable <strong>"Install from Unknown Sources"</strong> in
@@ -106,52 +110,54 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grid">
+                <div class="footer-column brand-col">
+                    <div class="footer-brand-top">
+                        <div class="footer-bag-icon-small">
+                            <svg viewBox="0 0 24 24" fill="white" width="20" height="20">
+                                <path
+                                    d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z" />
+                            </svg>
+                        </div>
+                        <div class="brand-text-footer">
+                            <span class="brand-name-footer">SmartBiz</span>
+                            <span class="brand-tagline-footer">by Sakhi Store</span>
+                        </div>
+                    </div>
+                    <p class="footer-description" data-i18n="f_desc">SmartBiz is an all-in-one D2C commerce platform
+                        that helps you build, launch, and scale your online business with ease. Powered by Sakhi Store.
+                    </p>
+                </div>
+
                 <div class="footer-column">
                     <h4 data-i18n="f_col1_title">WEBSITE BUILDER</h4>
-                    <a href="#" data-i18n="f_col1_link1">by Sakhi Store</a>
-                    <a href="#" data-i18n="f_col1_link2">Features</a>
+                    <a href="index.html#features" data-i18n="f_col1_link2">Features</a>
                     <a href="download.html" data-i18n="f_col1_link3">Download app</a>
                     <a href="#" data-i18n="f_col1_link4">Tutorials</a>
-                    <a href="#" data-i18n="f_col1_link5">Beginner's guide</a>
                     <a href="#" data-i18n="f_col1_link6">Book a demo</a>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="f_col2_title">ORDER MANAGEMENT</h4>
+                    <h4 data-i18n="f_col2_title">OPERATIONS</h4>
                     <a href="#" data-i18n="f_col2_link1">Smart Hub</a>
-                    <a href="#" data-i18n="f_col2_link2">Book a demo</a>
-                </div>
-                <div class="footer-column">
-                    <h4 data-i18n="f_col3_title">FULFILLMENT</h4>
                     <a href="#" data-i18n="f_col3_link1">Multi-Channel Fulfillment</a>
                     <a href="#" data-i18n="f_col3_link2">Features</a>
-                    <a href="#" data-i18n="f_col3_link3">Book a demo</a>
-                    <a href="#" data-i18n="f_col3_link4">Tutorials</a>
                 </div>
+
                 <div class="footer-column">
                     <h4 data-i18n="f_col4_title">RESOURCES</h4>
                     <a href="#" data-i18n="f_col4_link1">Blog</a>
-                    <a href="#" data-i18n="f_col4_link2">Success Stories</a>
                     <a href="#" data-i18n="f_col4_link3">Smart Academy</a>
-                </div>
-                <div class="footer-column">
-                    <h4 data-i18n="f_col5_title">COMPANY</h4>
-                    <a href="#" data-i18n="f_col5_link1">FAQs</a>
+                    <a href="index.html#help-center" data-i18n="f_col5_link1">Help Center</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="social-icons">
-                    <a href="#" class="social-icon">📷</a>
-                    <a href="#" class="social-icon">f</a>
-                    <a href="#" class="social-icon">▶</a>
-                </div>
-                <div class="footer-logo">
-                    <div style="font-weight: 700; font-size: 1.2rem;">SmartBiz</div>
-                    <div style="font-size: 0.9rem; color: #999; margin-top: 4px;">by Sakhi Store</div>
-                </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom-minimal">
                 <div class="footer-copyright">
                     © 2025 Sakhi Store. All rights reserved
                 </div>
-                <div class="footer-links">
+                <div class="footer-bottom-links">
                     <a href="#">Privacy policy</a>
                     <a href="#">Terms of use</a>
                     <a href="#">Sitemap</a>
