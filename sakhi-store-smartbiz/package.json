@@ -1,0 +1,19 @@
+{
+  "name": "sakhi-store-smartbiz",
+  "version": "1.0.0",
+  "description": "SmartBiz is a comprehensive D2C e-commerce platform that helps businesses build, launch, and grow their online stores. This is a production-ready website built with HTML, CSS, and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite src",
+    "build": "vite build src",
+    "preview": "vite preview src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}
