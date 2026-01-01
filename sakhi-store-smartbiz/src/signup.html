@@ -5,33 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- Primary Meta Tags -->
     <title>Join SmartBiz - Sign Up for Free | Sakhi Store</title>
     <meta name="title" content="Join SmartBiz - Sign Up for Free | Sakhi Store">
-    <meta name="description" content="Join SmartBiz and start building your D2C business today. Free until December 2025. No credit card required.">
+    <meta name="description"
+        content="Join SmartBiz and start building your D2C business today. Free until December 2025. No credit card required.">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smartbiz.sakhistore.com/signup.html">
     <meta property="og:title" content="Join SmartBiz - Sign Up for Free">
-    <meta property="og:description" content="Join SmartBiz and start building your D2C business today. Free until December 2025.">
-    
+    <meta property="og:description"
+        content="Join SmartBiz and start building your D2C business today. Free until December 2025.">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://smartbiz.sakhistore.com/signup.html">
     <meta property="twitter:title" content="Join SmartBiz - Sign Up for Free">
-    <meta property="twitter:description" content="Join SmartBiz and start building your D2C business today. Free until December 2025.">
-    
+    <meta property="twitter:description"
+        content="Join SmartBiz and start building your D2C business today. Free until December 2025.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,23 +44,33 @@
 <body class="signup-page">
     <div class="signup-wrapper">
         <div class="signup-content">
-            <div class="logo" style="display: flex; align-items: center; justify-content: center; gap: 0.1rem; margin-bottom: 2rem;">
-                <img src="images/logo_gif.gif" alt="Sakhi Store Logo" class="logo-image" style="height: 65px; width: auto; background-color: transparent; padding: 0;">
+            <div class="language-switcher" style="position: absolute; top: 20px; right: 20px; margin-left: 0;">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="mr">मराठी</button>
+            </div>
+            <div class="logo"
+                style="display: flex; align-items: center; justify-content: center; gap: 0.1rem; margin-bottom: 2rem;">
+                <img src="images/logo_gif.gif" alt="Sakhi Store Logo" class="logo-image"
+                    style="height: 65px; width: auto; background-color: transparent; padding: 0;">
             </div>
 
-            <h1 class="signup-title">Join the Revolution in D2C Commerce</h1>
-            <p class="signup-text">We are launching soon. Be the first to know when we go live and get exclusive early
+            <h1 class="signup-title" data-i18n="signup_title">Join the Revolution in D2C Commerce</h1>
+            <p class="signup-text" data-i18n="signup_text">We are launching soon. Be the first to know when we go live
+                and get exclusive early
                 access benefits.</p>
 
             <form class="signup-form"
                 onsubmit="event.preventDefault(); alert('Thanks for signing up! We will be in touch.');">
-                <input type="email" placeholder="Enter your email address" required class="signup-input">
-                <button type="submit" class="btn-primary" style="border-radius: 8px; padding: 0.75rem 2rem;">Get Early
+                <input type="email" placeholder="Enter your email address" data-i18n-placeholder="signup_placeholder"
+                    required class="signup-input">
+                <button type="submit" class="btn-primary" data-i18n="signup_btn"
+                    style="border-radius: 8px; padding: 0.75rem 2rem;">Get Early
                     Access</button>
             </form>
 
             <a href="index.html"
-                style="color: #666; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; display: inline-block;">&larr;
+                style="color: #666; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; display: inline-block;"
+                data-i18n="signup_back">&larr;
                 Back to Home</a>
         </div>
         <div class="signup-visual">

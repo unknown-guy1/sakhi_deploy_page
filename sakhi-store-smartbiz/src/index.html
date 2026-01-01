@@ -75,12 +75,16 @@
                 <img src="images/logo_gif.gif" alt="Sakhi Store Logo" class="logo-image">
             </div>
             <nav class="nav">
-                <a href="#why-smartbiz" class="nav-link">Why SmartBiz?</a>
-                <a href="#features" class="nav-link dropdown">Features</a>
-                <a href="download.html" class="nav-link">Download</a>
-                <a href="#sakhi-advantage" class="nav-link">The Sakhi Advantage</a>
-                <a href="#" class="nav-link">Help Center</a>
+                <a href="#why-smartbiz" class="nav-link" data-i18n="nav_why">Why SmartBiz?</a>
+                <a href="#features" class="nav-link dropdown" data-i18n="nav_features">Features</a>
+                <a href="download.html" class="nav-link" data-i18n="nav_download">Download</a>
+                <a href="#sakhi-advantage" class="nav-link" data-i18n="nav_advantage">The Sakhi Advantage</a>
+                <a href="#" class="nav-link" data-i18n="nav_help">Help Center</a>
             </nav>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="mr">मराठी</button>
+            </div>
 
         </div>
     </header>
@@ -89,8 +93,9 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Build, Launch & Grow Your D2C Business</h1>
-                <p>Create a stunning e-commerce website, powered by Sakhi Store. SmartBiz by Sakhi Store's website
+                <h1 data-i18n="hero_title">Build, Launch & Grow Your D2C Business</h1>
+                <p data-i18n="hero_desc">Create a stunning e-commerce website, powered by Sakhi Store. SmartBiz by Sakhi
+                    Store's website
                     builder provides all the tools you need to grow your business effortlessly.</p>
                 <div class="hero-actions">
                     <a href="Assets/Sakhi.apk" class="btn-hero btn-download download-trigger"
@@ -102,9 +107,10 @@
                             <path d="M2 17L2 18C2 19.6569 3.34315 21 5 21L19 21C20.6569 21 22 19.6569 22 18L22 17"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        Download APK
+                        <span data-i18n="btn_download">Download APK</span>
                     </a>
-                    <a href="#features" class="btn-hero btn-secondary" style="text-decoration: none;">Learn More</a>
+                    <a href="#features" class="btn-hero btn-secondary" style="text-decoration: none;"
+                        data-i18n="btn_learn_more">Learn More</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -113,14 +119,15 @@
                         class="hero-image">
                 </div>
                 <div class="floating-card card-order">
-                    <div class="card-title">Order Summary</div>
+                    <div class="card-title" data-i18n="order_summary">Order Summary</div>
                     <div class="card-content">Hoodie - ₹1,299</div>
                     <a href="signup.html"
-                        style="display: block; text-align: center; text-decoration: none; margin-top: 0.5rem; padding: 0.5rem; background: #e91e63; color: #fff; border: none; border-radius: 4px; width: 100%; font-size: 0.8rem;">Pay
+                        style="display: block; text-align: center; text-decoration: none; margin-top: 0.5rem; padding: 0.5rem; background: #e91e63; color: #fff; border: none; border-radius: 4px; width: 100%; font-size: 0.8rem;"
+                        data-i18n="pay_now">Pay
                         Now</a>
                 </div>
                 <div class="floating-card card-sales">
-                    <div class="card-title">Sales per week</div>
+                    <div class="card-title" data-i18n="sales_per_week">Sales per week</div>
                     <div class="card-content sales-positive">+16%</div>
                 </div>
             </div>
@@ -131,8 +138,9 @@
     <section class="run-store-section" id="why-smartbiz">
         <div class="run-store-container">
             <div class="run-store-left">
-                <h2 class="run-store-title">Run Your Store at Low Cost</h2>
-                <p class="run-store-text">Start your ecommerce website with no setup fees*, no subscriptions*, and low
+                <h2 class="run-store-title" data-i18n="run_store_title">Run Your Store at Low Cost</h2>
+                <p class="run-store-text" data-i18n="run_store_text">Start your ecommerce website with no setup fees*,
+                    no subscriptions*, and low
                     shipping rates.</p>
 
                 <p class="run-store-subtext">Build and grow your business with a clear focus on your products, not your
@@ -182,8 +190,10 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="run-store-feature-title">Everything You Need, Built In</h3>
-                    <p class="run-store-feature-text">Core ecommerce tools and services needed to run your online store
+                    <h3 class="run-store-feature-title" data-i18n="feature_built_in_title">Everything You Need, Built In
+                    </h3>
+                    <p class="run-store-feature-text" data-i18n="feature_built_in_text">Core ecommerce tools and
+                        services needed to run your online store
                         seamlessly—all included by default.</p>
                 </div>
 
@@ -224,8 +234,9 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="run-store-feature-title">Sakhi Trust Advantage</h3>
-                    <p class="run-store-feature-text">Leverage Sakhi's best for your growth: from the trusted Sakhi
+                    <h3 class="run-store-feature-title" data-i18n="feature_trust_title">Sakhi Trust Advantage</h3>
+                    <p class="run-store-feature-text" data-i18n="feature_trust_text">Leverage Sakhi's best for your
+                        growth: from the trusted Sakhi
                         checkout to world-class fulfillment.</p>
                 </div>
 
@@ -257,70 +268,78 @@
     <!-- Testimonial Section -->
     <section class="testimonial">
         <div class="testimonial-container">
-            <h2 class="testimonial-section-title">What Our Customers Say</h2>
+            <h2 class="testimonial-section-title" data-i18n="testimonial_section_title">What Our Customers Say</h2>
             <div class="reviews-grid">
                 <!-- Review 1 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="review-category">FMCG / Wellness Brand</div>
+                        <div class="review-category" data-i18n="review1_cat">FMCG / Wellness Brand</div>
                         <div class="review-stars">⭐⭐⭐⭐⭐</div>
                     </div>
-                    <h3 class="review-title">"SmartBiz understands the speed at which FMCG brands move."</h3>
-                    <p class="review-quote">"Launching new SKUs was painful earlier, but SmartBiz made it seamless.
+                    <h3 class="review-title" data-i18n="review1_title">"SmartBiz understands the speed at which FMCG
+                        brands move."</h3>
+                    <p class="review-quote" data-i18n="review1_quote">"Launching new SKUs was painful earlier, but
+                        SmartBiz made it seamless.
                         Their analytics dashboard shows exactly what's selling, where we're losing margin, and where
                         demand is rising. It has changed how we make decisions."</p>
                     <div class="review-author">
-                        <div class="review-author-name">Neha Kulkarni</div>
-                        <div class="review-author-role">Founder, PureLeaf Naturals</div>
+                        <div class="review-author-name" data-i18n="review1_author">Neha Kulkarni</div>
+                        <div class="review-author-role" data-i18n="review1_role">Founder, PureLeaf Naturals</div>
                     </div>
                 </div>
 
                 <!-- Review 2 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="review-category">Home & Lifestyle Brand</div>
+                        <div class="review-category" data-i18n="review2_cat">Home & Lifestyle Brand</div>
                         <div class="review-stars">⭐⭐⭐⭐⭐</div>
                     </div>
-                    <h3 class="review-title">"From day one, SmartBiz became a partner—not a vendor."</h3>
-                    <p class="review-quote">"We were looking for a scalable solution as our omnichannel sales grew.
+                    <h3 class="review-title" data-i18n="review2_title">"From day one, SmartBiz became a partner—not a
+                        vendor."</h3>
+                    <p class="review-quote" data-i18n="review2_quote">"We were looking for a scalable solution as our
+                        omnichannel sales grew.
                         SmartBiz not only solved our day-to-day operational pain but also guided us with insights and
                         best practices that improved our fulfilment speed and customer satisfaction."</p>
                     <div class="review-author">
-                        <div class="review-author-name">Sagar Jain</div>
-                        <div class="review-author-role">CEO, CasaCraft Living</div>
+                        <div class="review-author-name" data-i18n="review2_author">Sagar Jain</div>
+                        <div class="review-author-role" data-i18n="review2_role">CEO, CasaCraft Living</div>
                     </div>
                 </div>
 
                 <!-- Review 3 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="review-category">Footwear & Apparel Brand</div>
+                        <div class="review-category" data-i18n="review3_cat">Footwear & Apparel Brand</div>
                         <div class="review-stars">⭐⭐⭐⭐⭐</div>
                     </div>
-                    <h3 class="review-title">"SmartBiz has simplified complexities we struggled with for years."</h3>
-                    <p class="review-quote">"Tracking returns, exchanges, inventory aging, and vendor settlements was a
+                    <h3 class="review-title" data-i18n="review3_title">"SmartBiz has simplified complexities we
+                        struggled with for years."</h3>
+                    <p class="review-quote" data-i18n="review3_quote">"Tracking returns, exchanges, inventory aging, and
+                        vendor settlements was a
                         nightmare. With SmartBiz, everything is transparent and automated. Our team finally has time for
                         strategy instead of chasing spreadsheets."</p>
                     <div class="review-author">
-                        <div class="review-author-name">Praveen Reddy</div>
-                        <div class="review-author-role">Co-Founder, StrideWalk</div>
+                        <div class="review-author-name" data-i18n="review3_author">Praveen Reddy</div>
+                        <div class="review-author-role" data-i18n="review3_role">Co-Founder, StrideWalk</div>
                     </div>
                 </div>
 
                 <!-- Review 4 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="review-category">Beauty & Personal Care Brand</div>
+                        <div class="review-category" data-i18n="review4_cat">Beauty & Personal Care Brand</div>
                         <div class="review-stars">⭐⭐⭐⭐⭐</div>
                     </div>
-                    <h3 class="review-title">"SmartBiz transformed how we manage our growing product portfolio."</h3>
-                    <p class="review-quote">"As we expanded from 10 to 100+ SKUs, managing inventory and orders became
+                    <h3 class="review-title" data-i18n="review4_title">"SmartBiz transformed how we manage our growing
+                        product portfolio."</h3>
+                    <p class="review-quote" data-i18n="review4_quote">"As we expanded from 10 to 100+ SKUs, managing
+                        inventory and orders became
                         overwhelming. SmartBiz's intuitive dashboard and automated workflows have been a game-changer.
                         We can now focus on product innovation and customer experience instead of operational
                         headaches."</p>
                     <div class="review-author">
-                        <div class="review-author-name">Priya Verma</div>
-                        <div class="review-author-role">Founder & CEO, GlowEssence</div>
+                        <div class="review-author-name" data-i18n="review4_author">Priya Verma</div>
+                        <div class="review-author-role" data-i18n="review4_role">Founder & CEO, GlowEssence</div>
                     </div>
                 </div>
             </div>
@@ -330,7 +349,7 @@
     <!-- Trusted Brands -->
     <section class="trusted-brands">
         <div class="trusted-brands-container">
-            <h2>Trusted by Growing Indian Brands Like Yours</h2>
+            <h2 data-i18n="brands_title">Trusted by Growing Indian Brands Like Yours</h2>
             <div class="brands-grid">
                 <div class="brand-logo logo-truke">
                     <span class="truke-text">trüke</span>
@@ -355,11 +374,13 @@
         <div class="themes-container">
             <div class="themes-header">
                 <div>
-                    <div class="badge">Site Builder</div>
-                    <h2 class="themes-title">Stunning no-code themes,<br>designed to sell more</h2>
+                    <div class="badge" data-i18n="themes_badge">Site Builder</div>
+                    <h2 class="themes-title" data-i18n="themes_title">Stunning no-code themes,<br>designed to sell more
+                    </h2>
                 </div>
                 <div>
-                    <p class="themes-description">Launch instantly with unlimited listings, integrated ecommerce
+                    <p class="themes-description" data-i18n="themes_desc">Launch instantly with unlimited listings,
+                        integrated ecommerce
                         features
                         and themes that will make your brand pop.</p>
                 </div>
@@ -370,66 +391,69 @@
                     <div class="feature-icon shopping-bags-icon">
                         <img src="images/Gallerry.png" alt="Shopping Bags Icon" class="shopping-bags-image">
                     </div>
-                    <h3>Pre-built themes optimized for shopping for every category</h3>
+                    <h3 data-i18n="themes_feat1">Pre-built themes optimized for shopping for every category</h3>
                 </div>
                 <div class="theme-feature-card">
                     <div class="feature-icon shopping-bags-icon">
                         <img src="images/click.png" alt="Click Icon" class="shopping-bags-image">
                     </div>
-                    <h3>Easy customizations - Edit what you need, without any code</h3>
+                    <h3 data-i18n="themes_feat2">Easy customizations - Edit what you need, without any code</h3>
                 </div>
                 <div class="theme-feature-card">
                     <div class="feature-icon shopping-bags-icon">
                         <img src="images/loading.png" alt="Loading Icon" class="shopping-bags-image">
                     </div>
-                    <h3>Blazing fast load times for improved customer experience</h3>
+                    <h3 data-i18n="themes_feat3">Blazing fast load times for improved customer experience</h3>
                 </div>
             </div>
 
             <div class="themes-gallery">
                 <div class="themes-strip themes-strip--wide">
                     <div class="theme-frame theme-frame--tall" data-theme="artisan">
-                        <span class="theme-tag">Jewellery Edit</span>
+                        <span class="theme-tag" data-i18n="theme1_tag">Jewellery Edit</span>
                         <div class="theme-device theme-device--desktop">
                             <div class="theme-device-notch"></div>
                             <img src="images/theme-1.png" alt="Fashion Theme" loading="lazy">
                         </div>
                         <div class="theme-meta">
-                            <p class="theme-name">Timeless Elegance</p>
-                            <p class="theme-category">Warm nudes, soft light & editorial grids</p>
+                            <p class="theme-name" data-i18n="theme1_name">Timeless Elegance</p>
+                            <p class="theme-category" data-i18n="theme1_cat">Warm nudes, soft light & editorial grids
+                            </p>
                         </div>
                     </div>
                     <div class="theme-frame theme-frame--tall" data-theme="botanica">
-                        <span class="theme-tag">Home & Decor</span>
+                        <span class="theme-tag" data-i18n="theme2_tag">Home & Decor</span>
                         <div class="theme-device theme-device--desktop">
                             <div class="theme-device-notch"></div>
                             <img src="images/theme-2.png" alt="Home Decor Theme" loading="lazy">
                         </div>
                         <div class="theme-meta">
-                            <p class="theme-name">Nature Collective</p>
-                            <p class="theme-category">Earthy greens with airy masonry layouts</p>
+                            <p class="theme-name" data-i18n="theme2_name">Nature Collective</p>
+                            <p class="theme-category" data-i18n="theme2_cat">Earthy greens with airy masonry layouts</p>
                         </div>
                     </div>
                     <div class="theme-frame theme-frame--tall" data-theme="aura">
-                        <span class="theme-tag">Apparel</span>
+                        <span class="theme-tag" data-i18n="theme3_tag">Apparel</span>
                         <div class="theme-device theme-device--desktop">
                             <div class="theme-device-notch"></div>
                             <img src="images/theme-3.png" alt="Clothing Theme" loading="lazy">
                         </div>
                         <div class="theme-meta">
-                            <p class="theme-name">Aura Studio</p>
-                            <p class="theme-category">Minimal silhouettes with tonal highlights</p>
+                            <p class="theme-name" data-i18n="theme3_name">Aura Studio</p>
+                            <p class="theme-category" data-i18n="theme3_cat">Minimal silhouettes with tonal highlights
+                            </p>
                         </div>
                     </div>
                     <div class="theme-frame theme-frame--tall" data-theme="beauty">
-                        <span class="theme-tag">Beauty & Care</span>
+                        <span class="theme-tag" data-i18n="theme4_tag">Beauty & Care</span>
                         <div class="theme-device theme-device--desktop">
                             <div class="theme-device-notch"></div>
                             <img src="images/theme-4.png" alt="Beauty Theme" loading="lazy">
                         </div>
                         <div class="theme-meta">
-                            <p class="theme-name">Luna Glow</p>
-                            <p class="theme-category">Bold gradients & conversion-focused grids</p>
+                            <p class="theme-name" data-i18n="theme4_name">Luna Glow</p>
+                            <p class="theme-category" data-i18n="theme4_cat">Bold gradients & conversion-focused grids
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -441,8 +465,9 @@
     <!-- D2C Platform Section -->
     <section class="d2c-section">
         <div class="d2c-container">
-            <h2 class="d2c-title">One platform. All the D2C tools you need.</h2>
-            <p class="d2c-description">Simplify your business operations without sacrificing capability.<br>Everything
+            <h2 class="d2c-title" data-i18n="d2c_title">One platform. All the D2C tools you need.</h2>
+            <p class="d2c-description" data-i18n="d2c_desc">Simplify your business operations without sacrificing
+                capability.<br>Everything
                 you need to run your online store lives in one intuitive platform.</p>
         </div>
     </section>
@@ -490,45 +515,49 @@
                     <div class="feature-icon">
                         <img src="images/gif/payment.gif" alt="Payment Options">
                     </div>
-                    <h3>Multiple payment options</h3>
-                    <p>One-click setup to accept all the ways your customers love to pay—from UPI and cards to net
+                    <h3 data-i18n="feat1_title">Multiple payment options</h3>
+                    <p data-i18n="feat1_desc">One-click setup to accept all the ways your customers love to pay—from UPI
+                        and cards to net
                         banking and more.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <img src="images/gif/15576130.gif" alt="Accelerated Checkout">
                     </div>
-                    <h3>Accelerated checkout</h3>
-                    <p>Built-in checkout optimized for higher conversions.</p>
+                    <h3 data-i18n="feat2_title">Accelerated checkout</h3>
+                    <p data-i18n="feat2_desc">Built-in checkout optimized for higher conversions.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <img src="images/gif/17675715.gif" alt="Inventory Management">
                     </div>
-                    <h3>Inventory, Order & Returns Management</h3>
-                    <p>Take full control of your operations. Manage inventory, orders, and returns from a single,
+                    <h3 data-i18n="feat3_title">Inventory, Order & Returns Management</h3>
+                    <p data-i18n="feat3_desc">Take full control of your operations. Manage inventory, orders, and
+                        returns from a single,
                         intuitive dashboard.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <img src="images/gif/16678258.gif" alt="Shipping">
                     </div>
-                    <h3>Integrated low-cost shipping</h3>
-                    <p>Offer your customers fast & reliable delivery with our shipping partners.</p>
+                    <h3 data-i18n="feat4_title">Integrated low-cost shipping</h3>
+                    <p data-i18n="feat4_desc">Offer your customers fast & reliable delivery with our shipping partners.
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <img src="images/gif/18307503.gif" alt="Order Delivered">
                     </div>
-                    <h3>Order Delivered</h3>
-                    <p>Track and manage deliveries seamlessly with real-time updates.</p>
+                    <h3 data-i18n="feat5_title">Order Delivered</h3>
+                    <p data-i18n="feat5_desc">Track and manage deliveries seamlessly with real-time updates.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <img src="images/gif/12320379.gif" alt="Marketing Tools">
                     </div>
-                    <h3>Built-in marketing tools</h3>
-                    <p>SEO optimization, social media integrations, and automated campaigns to grow your business.</p>
+                    <h3 data-i18n="feat6_title">Built-in marketing tools</h3>
+                    <p data-i18n="feat6_desc">SEO optimization, social media integrations, and automated campaigns to
+                        grow your business.</p>
                 </div>
             </div>
         </div>
@@ -537,20 +566,24 @@
     <!-- Dark Teal Section - Run Your Store -->
     <section class="dark-section" id="sakhi-advantage">
         <div class="dark-section-container">
-            <h2>Run Your Store at Low Cost</h2>
-            <p>Start your ecommerce website with no setup fees*, no subscriptions*, and low shipping rates.</p>
-            <p>Build and grow your business with a clear focus on your products, not your expenses.</p>
-            <p style="font-size: 0.9rem; opacity: 0.8;">* Free until December 2025.</p>
+            <h2 data-i18n="run_store_title">Run Your Store at Low Cost</h2>
+            <p data-i18n="run_store_text">Start your ecommerce website with no setup fees*, no subscriptions*, and low
+                shipping rates.</p>
+            <p data-i18n="run_store_focus">Build and grow your business with a clear focus on your products, not your
+                expenses.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;" data-i18n="run_store_free_note">* Free until December 2025.</p>
 
             <div class="dark-grid">
                 <div>
-                    <h3>Everything You Need, Built In</h3>
-                    <p>Core ecommerce tools and services needed to run your online store seamlessly—all included by
+                    <h3 data-i18n="feature_built_in_title">Everything You Need, Built In</h3>
+                    <p data-i18n="feature_built_in_text">Core ecommerce tools and services needed to run your online
+                        store seamlessly—all included by
                         default.</p>
                 </div>
                 <div class="highlight-card">
-                    <h3>Sakhi Trust Advantage</h3>
-                    <p>Leverage Sakhi Store's best for your growth: from the trusted checkout to world-class
+                    <h3 data-i18n="feature_trust_title">Sakhi Trust Advantage</h3>
+                    <p data-i18n="feature_trust_text">Leverage Sakhi Store's best for your growth: from the trusted
+                        checkout to world-class
                         fulfillment.</p>
                 </div>
             </div>
@@ -566,20 +599,23 @@
                 <div class="marketing-content">
                     <div class="tools-grid">
                         <div class="tool-card">
-                            <h3>SEO tools & social media integrations</h3>
-                            <p>Built-in SEO optimization tools optimize product listings with keywords to rank higher on
+                            <h3 data-i18n="tool_seo_title">SEO tools & social media integrations</h3>
+                            <p data-i18n="tool_seo_desc">Built-in SEO optimization tools optimize product listings with
+                                keywords to rank higher on
                                 search
                                 engines, driving more traffic.</p>
                         </div>
                         <div class="tool-card">
-                            <h3>Seamless advertising platform integrations</h3>
-                            <p>Run targeted ad campaigns with Google Ads and Meta (Facebook/Instagram) integrations to
+                            <h3 data-i18n="tool_ads_title">Seamless advertising platform integrations</h3>
+                            <p data-i18n="tool_ads_desc">Run targeted ad campaigns with Google Ads and Meta
+                                (Facebook/Instagram) integrations to
                                 boost
                                 sales and attract new customers.</p>
                         </div>
                         <div class="tool-card">
-                            <h3>Automations for every customer action</h3>
-                            <p>Re-engage and win more customers with automated WhatsApp messages. Recover abandoned
+                            <h3 data-i18n="tool_auto_title">Automations for every customer action</h3>
+                            <p data-i18n="tool_auto_desc">Re-engage and win more customers with automated WhatsApp
+                                messages. Recover abandoned
                                 carts, send
                                 order confirmation and more.</p>
                         </div>
@@ -595,10 +631,12 @@
             <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                 <span
                     style="width: 8px; height: 8px; background: #e91e63; border-radius: 50%; display: inline-block;"></span>
-                <span style="text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Site Builder</span>
+                <span style="text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;"
+                    data-i18n="site_builder_badge">Site Builder</span>
             </div>
-            <h2>Stunning no-code themes, designed to sell more</h2>
-            <p>Launch instantly with unlimited listings, integrated ecommerce features and themes that will make your
+            <h2 data-i18n="themes_title">Stunning no-code themes, designed to sell more</h2>
+            <p data-i18n="themes_desc">Launch instantly with unlimited listings, integrated ecommerce features and
+                themes that will make your
                 brand pop.</p>
         </div>
     </section>
@@ -606,19 +644,22 @@
     <!-- Free to Start Section -->
     <section class="marketing-tools" style="background: #fce4ec;">
         <div class="marketing-tools-container">
-            <h2 style="color: #1a1a1a;">Free to start. Built to save.</h2>
+            <h2 style="color: #1a1a1a;" data-i18n="free_to_start_title">Free to start. Built to save.</h2>
             <div class="tools-grid">
                 <div class="feature-card">
-                    <h3>Zero costs. Zero reasons to wait.</h3>
-                    <p>Build your store for free today. No subscription or transaction fees until December 2025.</p>
+                    <h3 data-i18n="zero_costs_title">Zero costs. Zero reasons to wait.</h3>
+                    <p data-i18n="zero_costs_desc">Build your store for free today. No subscription or transaction fees
+                        until December 2025.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Built-in tools; no extra costs</h3>
-                    <p>All core tools built-in or pre-integrated. No third-party plugin hassles, no extra costs.</p>
+                    <h3 data-i18n="extra_costs_title">Built-in tools; no extra costs</h3>
+                    <p data-i18n="extra_costs_desc">All core tools built-in or pre-integrated. No third-party plugin
+                        hassles, no extra costs.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Optimized for conversion</h3>
-                    <p>From high-performing themes to integrated growth tools, everything is designed to help you turn
+                    <h3 data-i18n="conversion_title">Optimized for conversion</h3>
+                    <p data-i18n="conversion_desc">From high-performing themes to integrated growth tools, everything is
+                        designed to help you turn
                         visitors into buyers.</p>
                 </div>
             </div>
@@ -628,36 +669,42 @@
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="faq-container">
-            <h2>Frequently Asked Questions</h2>
+            <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3>Is SmartBiz really free?</h3>
-                    <p>Yes! SmartBiz is completely free until December 2025. No setup fees, no subscription fees, and no
+                    <h3 data-i18n="faq_q1">Is SmartBiz really free?</h3>
+                    <p data-i18n="faq_a1">Yes! SmartBiz is completely free until December 2025. No setup fees, no
+                        subscription fees, and no
                         transaction fees. Start building your store today at zero cost.</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Do I need coding skills?</h3>
-                    <p>No coding skills required! SmartBiz features a drag-and-drop no-code editor that lets you
+                    <h3 data-i18n="faq_q2">Do I need coding skills?</h3>
+                    <p data-i18n="faq_a2">No coding skills required! SmartBiz features a drag-and-drop no-code editor
+                        that lets you
                         customize your store visually. Anyone can build a professional e-commerce website.</p>
                 </div>
                 <div class="faq-item">
-                    <h3>What payment methods are supported?</h3>
-                    <p>SmartBiz supports all major payment methods including UPI, credit/debit cards, net banking, and
+                    <h3 data-i18n="faq_q3">What payment methods are supported?</h3>
+                    <p data-i18n="faq_a3">SmartBiz supports all major payment methods including UPI, credit/debit cards,
+                        net banking, and
                         digital wallets. Set up payments in just one click.</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Can I customize my store design?</h3>
-                    <p>Absolutely! Choose from our pre-built themes optimized for every category, and customize them
+                    <h3 data-i18n="faq_q4">Can I customize my store design?</h3>
+                    <p data-i18n="faq_a4">Absolutely! Choose from our pre-built themes optimized for every category, and
+                        customize them
                         easily with our no-code editor. No technical knowledge needed.</p>
                 </div>
                 <div class="faq-item">
-                    <h3>How do I manage inventory and orders?</h3>
-                    <p>SmartBiz includes a comprehensive dashboard for managing inventory, orders, and returns.
+                    <h3 data-i18n="faq_q5">How do I manage inventory and orders?</h3>
+                    <p data-i18n="faq_a5">SmartBiz includes a comprehensive dashboard for managing inventory, orders,
+                        and returns.
                         Everything you need is built-in and accessible from one place.</p>
                 </div>
                 <div class="faq-item">
-                    <h3>What about shipping?</h3>
-                    <p>We've integrated with leading shipping partners to offer you low-cost, reliable shipping options.
+                    <h3 data-i18n="faq_q6">What about shipping?</h3>
+                    <p data-i18n="faq_a6">We've integrated with leading shipping partners to offer you low-cost,
+                        reliable shipping options.
                         Manage deliveries and track orders seamlessly.</p>
                 </div>
             </div>
@@ -670,12 +717,14 @@
             <div class="cta-badge">
                 <span
                     style="width: 8px; height: 8px; background: #00a8a8; border-radius: 50%; display: inline-block; margin-right: 8px;"></span>
-                0% fees until December 2025
+                <span data-i18n="cta_badge">0% fees until December 2025</span>
             </div>
-            <h2>Join 5,000+ growing brands</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">Start building your online store today. No
+            <h2 data-i18n="cta_title">Join 5,000+ growing brands</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;" data-i18n="cta_desc">Start building your
+                online store today. No
                 credit card required.</p>
-            <a href="signup.html" class="btn-cta" style="text-decoration: none;">Sign-up for free</a>
+            <a href="signup.html" class="btn-cta" style="text-decoration: none;" data-i18n="cta_btn">Sign-up for
+                free</a>
         </div>
     </section>
 
@@ -684,35 +733,35 @@
         <div class="footer-container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h4>WEBSITE BUILDER</h4>
-                    <a href="#">by Sakhi Store</a>
-                    <a href="#">Features</a>
-                    <a href="#">Download app</a>
-                    <a href="#">Tutorials</a>
-                    <a href="#">Beginner's guide</a>
-                    <a href="#">Book a demo</a>
+                    <h4 data-i18n="f_col1_title">WEBSITE BUILDER</h4>
+                    <a href="#" data-i18n="f_col1_link1">by Sakhi Store</a>
+                    <a href="#" data-i18n="f_col1_link2">Features</a>
+                    <a href="download.html" data-i18n="f_col1_link3">Download app</a>
+                    <a href="#" data-i18n="f_col1_link4">Tutorials</a>
+                    <a href="#" data-i18n="f_col1_link5">Beginner's guide</a>
+                    <a href="#" data-i18n="f_col1_link6">Book a demo</a>
                 </div>
                 <div class="footer-column">
-                    <h4>ORDER MANAGEMENT</h4>
-                    <a href="#">Smart Hub</a>
-                    <a href="#">Book a demo</a>
+                    <h4 data-i18n="f_col2_title">ORDER MANAGEMENT</h4>
+                    <a href="#" data-i18n="f_col2_link1">Smart Hub</a>
+                    <a href="#" data-i18n="f_col2_link2">Book a demo</a>
                 </div>
                 <div class="footer-column">
-                    <h4>FULFILLMENT</h4>
-                    <a href="#">Multi-Channel Fulfillment</a>
-                    <a href="#">Features</a>
-                    <a href="#">Book a demo</a>
-                    <a href="#">Tutorials</a>
+                    <h4 data-i18n="f_col3_title">FULFILLMENT</h4>
+                    <a href="#" data-i18n="f_col3_link1">Multi-Channel Fulfillment</a>
+                    <a href="#" data-i18n="f_col3_link2">Features</a>
+                    <a href="#" data-i18n="f_col3_link3">Book a demo</a>
+                    <a href="#" data-i18n="f_col3_link4">Tutorials</a>
                 </div>
                 <div class="footer-column">
-                    <h4>RESOURCES</h4>
-                    <a href="#">Blog</a>
-                    <a href="#">Success Stories</a>
-                    <a href="#">Smart Academy</a>
+                    <h4 data-i18n="f_col4_title">RESOURCES</h4>
+                    <a href="#" data-i18n="f_col4_link1">Blog</a>
+                    <a href="#" data-i18n="f_col4_link2">Success Stories</a>
+                    <a href="#" data-i18n="f_col4_link3">Smart Academy</a>
                 </div>
                 <div class="footer-column">
-                    <h4>COMPANY</h4>
-                    <a href="#">FAQs</a>
+                    <h4 data-i18n="f_col5_title">COMPANY</h4>
+                    <a href="#" data-i18n="f_col5_link1">FAQs</a>
                 </div>
             </div>
             <div class="footer-bottom">
