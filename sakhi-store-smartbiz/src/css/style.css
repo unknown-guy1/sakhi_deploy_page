@@ -4428,3 +4428,58 @@ img {
         padding: 2rem;
     }
 }
+
+/* Venture Block in Footer */
+.venture-block {
+    margin-top: 2.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.venture-block:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.venture-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 2px;
+}
+
+.venture-logo {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 6px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    /* If the image has a white bg, we can try to blend it or just style the container */
+    mix-blend-mode: screen;
+    /* This might work if the logo is black text on white, but risky for JPG. Let's stick to safe. */
+    mix-blend-mode: normal;
+}
+
+/* If the jpg has a white background, let's make it look intentional */
+.venture-logo {
+    mix-blend-mode: normal;
+    background: white;
+    padding: 4px 8px;
+    height: 40px;
+}
